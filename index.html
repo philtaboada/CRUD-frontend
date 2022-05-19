@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+  <title>E-comerce</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="product-detail">
+        <div class="title-container">
+        <p class="title">Mis productos</p>
+        </div>
+
+    <div class="my-order-content">
+        <div id="products-container">
+                <!-- Aqui van los productos -->
+        </div>
+        <div class="container-menu">
+            <div>
+                <form onsubmit="event.preventDefault(), updateProduct()">
+                    <div>
+                        <label for="name" >Nombre del producto</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="price" >Precio</label>
+                        <input type="number" id="price"></input>
+                    </div>
+                    <div class="mb-3">
+                        <label for="image-url" >url de la imagen</label>
+                        <input type="text" id="image-url"></input>
+                    </div>
+                    <button type="submit" class="submit-button">Actualizar</button>
+                </form>
+                <button onclick="createProduct()" class="create-button">
+                    <i class="fa-solid fa-circle-plus fa-2x"></i>
+                </button>
+            </div>
+            <div class="img-container">
+                <img class="bg-img" src="https://scontent.flim2-2.fna.fbcdn.net/v/t1.6435-9/186452355_111686731042259_8076964013267487307_n.jpg?_nc_cat=106&ccb=1-6&_nc_sid=e3f864&_nc_eui2=AeFqSuc0WutzZeA7GPmyEHfn7j96OP9vkQTuP3o4_2-RBEntRGf0Oru4hozGMvDEI4AiMHEGVccufwmMiB_YIMeS&_nc_ohc=tmWG2uz32tAAX-QzZJh&_nc_ht=scontent.flim2-2.fna&oh=00_AT8HI6npLyulLQbu2k8L2iSGzA0TKSvwPvBJb1wcQXFbSA&oe=62AC0A4F" alt="">
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="./assets/js/js.js" type="module" ></script>
+<script src="https://kit.fontawesome.com/60ce94b3bb.js" crossorigin="anonymous"></script>
+</body>
+</html>
